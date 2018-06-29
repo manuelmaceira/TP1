@@ -1,0 +1,15 @@
+El programa debe ser llamado seguido de una bandera de formato y el formato indicado.
+
+Windows: <Archivo ejecutable>.exe -fmt <Formato>
+Linux: ./<Archivo ejecutable> -fmt <Formato>
+
+El formato puede ser uno de los siguientes:
+
+AAAAMMDD
+AAAADDD
+DDMMAAAA
+AAAAMMDDHHmmSS
+AAAADDDHHmmSS
+
+Un ejemplo típico del llamado (en linux) es:
+[./sysdate -fmt AAAAMMDD]
