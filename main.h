@@ -10,5 +10,6 @@
 
 status_t validate_args(int argc, char *argv[], size_t * index);
 status_t get_format_index(int argc, char *argv[], size_t * index);
+status_t set_format(char * format_arg, setup_t * setup);
 
 #endif

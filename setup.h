@@ -2,11 +2,10 @@
 #define SETUP__H
 
 #include <stdio.h>
-
 #include "types.h"
 
 typedef struct{
-	format_t format;
+	date_format_t date_format;
 }setup_t;
 
 #endif

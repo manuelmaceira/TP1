@@ -3,12 +3,10 @@
 
 #include <stdio.h>
 
-#define MAX_ERRORS 8
+#define MAX_ERRORS 5
 
-#define MSG_ERROR_INVALID_FORMAT "Error en el formato."
-#define MSG_ERROR_INVALID_ARGS "Error, argumentos invalidos."
-#define MSG_ERROR_NO_FORMAT_FLAG "Error, no hay bandera de formato."
-#define MSG_ERROR_FORMAT_ARGUMENT "Error, no hay argumento de formato."
+#define MSG_ERROR_INVALID_DATE_FORMAT "Error, formato de fecha inválido."
+#define MSG_ERROR_INVALID_PROGRAM_INVOCATION "Error en la invocación del programa."
 #define MSG_ERROR_NULL_POINTER "Error, puntero nulo."
 #define MSG_ERROR_SYSTEM_DATE "Error al recuperar la fecha del sistema."
 #define MSG_ERROR_OUT_OF_MEMORY "Error, memoria insuficiente."

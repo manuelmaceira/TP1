@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-#include "time_format.h"
+#include "date_formats.h"
 
 char * formats_dictionary[MAX_FORMATS] = {
 	CMD_ARG_TOKEN_DATE_FORMAT_DDMMYYYY,

@@ -1,5 +1,5 @@
-#ifndef TIME_FORMAT__H
-#define TIME_FORMAT__H
+#ifndef DATE_FORMATS__H
+#define DATE_FORMATS__H
 
 #define MAX_FORMATS 5
 

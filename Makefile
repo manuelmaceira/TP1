@@ -3,11 +3,11 @@ CFLAGS = -Wall -Werror -std=c89 -pedantic -O2
 CC = gcc
 
 ##Se define el make all##
-all : make_timeformatter
+all : timeformatter
 
 ##Se define el script de compilación final junto con los distintos##
 ##scripts de compilación para los distintos archivos .c##
-make_timeformatter : main.o format.o errors.o time_formatter.o setup.o
+timeformatter : main.o format.o errors.o time_formatter.o setup.o
 	$(CC) $(CFLAGS) -o timeformatter main.o format.o errors.o time_formatter.o setup.o
 
 setup.o : setup.c setup.h
@@ -24,3 +24,6 @@ errors.o : errors.c errors.h format.h main.h
 
 time_formatter.o : time_formatter.c time_formatter.h types.h format.h
 	$(CC) $(CFLAGS) -o time_formatter.o -c time_formatter.c
+
+clean :
+	rm *.o
