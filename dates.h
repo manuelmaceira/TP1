@@ -2,8 +2,10 @@
 #define DATES__H
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include <time.h>
-
+#include "date_formats.h"
 #include "types.h"
 
 #define MAX_DATE_FORMAT_LENGHT 20

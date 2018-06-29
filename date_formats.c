@@ -2,7 +2,7 @@
 
 #include "date_formats.h"
 
-char * formats_dictionary[MAX_FORMATS] = {
+char * formats_dictionary[MAX_DATE_FORMATS] = {
 	CMD_ARG_TOKEN_DATE_FORMAT_DDMMYYYY,
 	CMD_ARG_TOKEN_DATE_FORMAT_YYYYDDD,
 	CMD_ARG_TOKEN_DATE_FORMAT_YYYYMMDD,

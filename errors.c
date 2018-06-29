@@ -1,10 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-#include "date_format.h"
 #include "errors.h"
 
-extern char * formats_dictionary[MAX_FORMATS];
+extern char * formats_dictionary[MAX_DATE_FORMATS];
 
 char * errors_dictionary[MAX_ERRORS] = {
 	"",
@@ -16,15 +14,15 @@ char * errors_dictionary[MAX_ERRORS] = {
 };
 
 void show_usage(void) {
-	file * info_file;
+	FILE * info_file;
 	unsigned int c;
 
-	if ((info_file = fopen(INFO_FILE_PATH)) == NULL) {
+	if ((info_file = fopen(INFO_FILE_PATH, "rt")) == NULL) {
 		fprintf(stderr, "%s\n", MSG_INFO_FILE_NOT_FOUND);
 	}
 
 	while ((c = fgetc(info_file)) != EOF) {
-		putc(c);
+		putc(c, stdout);
 	}
 
 	fclose(info_file);

@@ -2,8 +2,11 @@
 #define ERRORS__H
 
 #include <stdio.h>
+#include <stdlib.h>
+#include "types.h"
+#include "date_formats.h"
 
-#define MAX_ERRORS 5
+#define MAX_ERRORS 6
 
 #define MSG_ERROR_INVALID_DATE_FORMAT "Error, formato de fecha inválido."
 #define MSG_ERROR_INVALID_PROGRAM_INVOCATION "Error en la invocación del programa."
