@@ -30,4 +30,4 @@ void show_usage(void) {
 	}
 
 	fclose(info_file);
-}
+}.
